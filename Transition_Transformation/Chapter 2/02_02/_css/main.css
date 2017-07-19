@@ -701,7 +701,7 @@ footer .col2 {
   text-align: center;
 }
 .status:hover {
-  opacity: 1;
+  opacity: .8;
 }
 /* status widths */
 .status.s168 {

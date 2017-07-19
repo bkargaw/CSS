@@ -3,16 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <title>Traced Bird Ad</title>
+<script src='http://code.jquery.com/jquery.min.js'></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#logo').addClass('active')
+	})
+</script>
 <style>
 #outerWrapper {
 	width: 1000px;
 	margin: 30px auto;
 	position: relative;
+	perspective: 500px;
 }
 #logo {
 	position: absolute;
 	top: 37px;
 	left: 39px;
+	-webkit-transition: all 3s ease-in-out;
+	-moz-transition: all 3s ease-in-out;
+	-o-transition: all 3s ease-in-out;
+	transition: all 3s ease-in-out;
+}
+/*
+#logo:hover {
+	position: absolute;
+	top: 37px;
+	left: 39px;
+	-webkit-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+*/
+
+.active {
+	position: absolute;
+	top: 37px;
+	left: 39px;
+	-webkit-transform: rotateY(-720deg);
+	-moz-transform: rotateY(-720deg);
+	-o-transform: rotateY(-720deg);
+	transform: rotateY(-720deg);
 }
 </style>
 </head>

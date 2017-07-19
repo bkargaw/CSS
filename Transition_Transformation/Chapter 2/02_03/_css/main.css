@@ -156,7 +156,7 @@ em {
 .more {
 	display: block;
 }
-/*layout styles*/ 
+/*layout styles*/
 body {
 	width: 960px;
 	position: relative;
@@ -671,10 +671,24 @@ footer .col2 {
 	width: 130px;
 }
 #theArt {
-	text-align: center;	
+	text-align: center;
 }
 #theArt img {
 	margin: 20px;
 	width: 180px;
 	height: 180px;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+#theArt img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  box-shadow: 10px 5px 5px black;
+  -moz-box-shadow: 10px 5px 5px black;
+  -webkit-box-shadow: 10px 5px 5px black;
 }
