@@ -156,7 +156,7 @@ em {
 .more {
 	display: block;
 }
-/*layout styles*/ 
+/*layout styles*/
 body {
 	width: 963px;
 	position: relative;
@@ -505,7 +505,7 @@ div.artwork {
 	margin-right: 3px;
 	margin-bottom: 3px;
 	background: rgb(120, 120, 120);
-	padding: 12px 12px 0 12px; 
+	padding: 12px 12px 0 12px;
 	position: relative;
 }
 div.nrm {
@@ -670,6 +670,38 @@ footer .col1 {
 footer .col2 {
 	float: right;
 	width: 130px;
+}
+
+.status{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.status{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+.status h3 {
+  margin-top: 40px;
+  padding: 5px 0;
+  background-color: rgb(168, 88, 163);
+  color: white;
+  text-align: center;
+}
+.status:hover {
+  opacity: 1;
 }
 /* status widths */
 .status.s168 {
