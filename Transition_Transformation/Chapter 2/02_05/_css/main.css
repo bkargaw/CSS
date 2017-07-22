@@ -156,7 +156,7 @@ em {
 .more {
 	display: block;
 }
-/*layout styles*/ 
+/*layout styles*/
 body {
 	width: 960px;
 	position: relative;
@@ -674,9 +674,16 @@ footer hr {
 	width: 90%;
 }
 footer #privacy {
-	padding: 20px;	
+	padding: 20px;
 }
 footer #privacy p {
 	font-size: .5em;
 	text-align: justify;
+  transition: font-size .5s linear;
+  -webkit-transition: font-size .5s linear;
+  -moz-transition: font-size .5s linear;
+  -o-transition: font-size .5s linear;
+}
+footer #privacy p:hover {
+	font-size: 1em;
 }

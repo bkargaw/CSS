@@ -8,6 +8,7 @@
     $(document).ready(function() {
 	    $("#logo").addClass("anim-logo");
 	    $("#gradient").addClass("gradient-anim");
+	    $(".wheel").addClass("anim-wheel");
     });
 </script>
 <style>
@@ -37,40 +38,73 @@
 #swoosh {
 	position: absolute;
 	left: 0;
-	top: 0;	
+	top: 0;
 }
 #gradient {
 	position: absolute;
 	left: 1392px;
-	top: 34px;	
-	-webkit-transition: all .5s ease-in-out;	
+	top: 34px;
+	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 }
 #gradient.gradient-anim {
 	left: 392px;
-	top: 34px;	
+	top: 34px;
 }
 #text {
 	position: absolute;
 	left: 486px;
-	top: 178px;	
+	top: 178px;
 }
 .wheel {
+  opacity: 0;
+  -webkit-transition-property: opacity, left, webkit-transform;
+  -webkit-transition-duration: 1.5s, 2s, 2s;
+  -webkit-transition-timing-function: ease, ease, ease-out;
+
+  -moz-transition-property: opacity, left, moz-transform;
+  -moz-transition-duration: 1.5s, 2s, 2s;
+  -moz-transition-timing-function: ease, ease, ease-out;
+
+  -o-transition-property: opacity, left, o-transform;
+  -o-transition-duration: 1.5s, 2s, 2s;
+  -o-transition-timing-function: ease, ease, ease-out;
+
+  transition-property: opacity, left,transform;
+  transition-duration: 1.5s, 2s, 2s;
+  transition-timing-function: ease, ease, ease-out;
+}
+
+.anim-wheel{
+  opacity: 1;
+  -webkit-transform: rotate(-1080deg);
+	-moz-transform: rotate(-1080deg);
+	-o-transform: rotate(-1080deg);
+	transform: rotate(-1080deg);
 }
 #black_wheel {
 	position: absolute;
+	left: 1434px;
+	top: 10px;
+}
+#black_wheel.anim-wheel {
 	left: 434px;
-	top: 10px;	
 }
 #red_wheel {
 	position: absolute;
+	left: 1618px;
+	top: 10px;
+}
+#red_wheel.anim-wheel {
 	left: 618px;
-	top: 10px;	
 }
 #silver_wheel {
 	position: absolute;
+	left: 1807px;
+	top: 10px;
+}
+#silver_wheel.anim-wheel {
 	left: 807px;
-	top: 10px;	
 }
 .anim-logo {
 	-webkit-transform: rotateY(-720deg);
