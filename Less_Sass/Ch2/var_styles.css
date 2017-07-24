@@ -1,0 +1,20 @@
+/* 
+ * LESS Variables are defined with an @ character
+ * and can have different kinds of data types: 
+ *  color, string, boolean, multi-value
+ */
+/* line 14, /Users/brukargaw/Desktop/CSS/Less_Sass/Ch2/var_styles.less */
+h1,
+h2 {
+  color: navy;
+}
+/* line 18, /Users/brukargaw/Desktop/CSS/Less_Sass/Ch2/var_styles.less */
+#mypara {
+  font-size: 24px;
+  border: 4px solid navy;
+  padding: 15px 15px 15px 35px;
+}
+/* line 24, /Users/brukargaw/Desktop/CSS/Less_Sass/Ch2/var_styles.less */
+#mypara:after {
+  content: " with an appended string";
+}
