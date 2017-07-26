@@ -156,7 +156,7 @@ em {
 .more {
 	display: block;
 }
-/*layout styles*/ 
+/*layout styles*/
 body {
 	width: 960px;
 	position: relative;
@@ -669,4 +669,73 @@ footer .col1 {
 footer .col2 {
 	float: right;
 	width: 130px;
+}
+
+@-webkit-keyframes spotlightBG{
+  0% {background-color: white;}
+  25% {background-color: #fff5a5;}
+  50% {background-color: #ffd4da;}
+  75% {background-color: #99d2e4;}
+  100% {background-color: #d8cab4;}
+}
+
+@-moz-keyframes spotlightBG{
+  0% {background-color: white;}
+  25% {background-color: #fff5a5;}
+  50% {background-color: #ffd4da;}
+  75% {background-color: #99d2e4;}
+  100% {background-color: #d8cab4;}
+}
+
+@-o-keyframes spotlightBG{
+  0% {background-color: white;}
+  25% {background-color: #fff5a5;}
+  50% {background-color: #ffd4da;}
+  75% {background-color: #99d2e4;}
+  100% {background-color: #d8cab4;}
+}
+
+@keyframes spotlightBG{
+  0% {background-color: white;}
+  25% {background-color: #fff5a5;}
+  50% {background-color: #ffd4da;}
+  75% {background-color: #99d2e4;}
+  100% {background-color: #d8cab4;}
+}
+
+div.student{
+  background: white;
+  -webkit-animation: spotlightBG 10s infinite alternate;
+  -moz-animation: spotlightBG 10s infinite alternate;
+  -o-animation: spotlightBG 10s infinite alternate;
+  animation: spotlightBG 10s infinite alternate;
+}
+
+@-webkit-keyframes studentName{
+  0% {color: #d6d6d6;}
+  50% {color: #666;}
+  100% {color: #333;}
+}
+@-moz-keyframes studentName{
+  0% {color: #d6d6d6;}
+  50% {color: #666;}
+  100% {color: #333;}
+}
+@-o-keyframes studentName{
+  0% {color: #d6d6d6;}
+  50% {color: #666;}
+  100% {color: #333;}
+}
+@keyframes studentName{
+  0% {color: #d6d6d6;}
+  50% {color: #666;}
+  100% {color: #333;}
+}
+
+div.student p{
+  color: #d6d6d6;
+  -webkit-animation: studentName 10s infinite alternate;
+  -moz-animation: studentName 10s infinite alternate;
+  -o-animation: studentName 10s infinite alternate;
+  animation: studentName 10s infinite alternate;
 }
